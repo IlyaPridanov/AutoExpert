@@ -1,0 +1,92 @@
+:root {
+    --blue: #00adff;
+    --black: #261f0f;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+
+    color: var(--black);
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.logo:focus,
+.logo:hover,
+.logo:active {
+    cursor: pointer;
+
+    opacity: 0.8;
+}
+
+.logo__circle-max {
+    position: relative;
+    display: block;
+    width: 83px;
+    height: 83px;
+    margin-right: 9px;
+
+    background-color: white;
+    background-image: 
+        linear-gradient(143deg, var(--black), var(--black) 50%, transparent 50%, transparent),
+        linear-gradient(34deg, var(--black), var(--black) 50%, transparent 50%, transparent);
+    border-radius: 50%;
+}
+
+.logo__circle-min {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    background-color: var(--blue);
+    background-image: 
+        linear-gradient(143deg, white, white 50%, transparent 50%, transparent),
+        linear-gradient(34deg, white, white 50%, transparent 50%, transparent);
+}
+
+.logo__text {
+    margin: 0;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 1.15;
+    word-spacing: 0.2em;
+}
+
+.logo__text-blue {
+    display: flex;
+    align-items: center;
+
+    color: var(--blue);
+}
+
+.logo__text-min {
+    display: block;
+    margin-top: 2px;
+    margin-left: 4px;
+
+    font-weight: 400;
+    font-size: 9px;
+    color: var(--black);
+}
